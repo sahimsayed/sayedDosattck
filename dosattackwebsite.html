@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Understanding DoS Attacks</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f7ef;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-bottom: 4px solid #1b4b34;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2d6a4f;
+            font-size: 2em;
+        }
+
+        p, ul {
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 1.2em;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            color: #2d6a4f;
+            font-size: 1.4em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+            font-weight: bold;
+            padding: 2px 6px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        /* Interactive styles */
+        a {
+            color: #ffeb3b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        button {
+            background-color: #2d6a4f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1b4b34;
+        }
+
+        /* Adding smooth scroll to the page */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Adding animations */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="fade-in">Understanding Denial of Service (DoS) Attacks</h1>
+    <p class="fade-in">Learn what DoS attacks are, how they affect systems, and how to defend against them.</p>
+</header>
+
+<main>
+    <section>
+        <h2>What is a DoS Attack?</h2>
+        <p>A Denial of Service (<span class="highlight">DoS</span>) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service, or network by overwhelming the target or its infrastructure with a flood of internet traffic.</p>
+    </section>
+
+    <section>
+        <h2>How Does a DoS Attack Work?</h2>
+        <p>In a typical DoS attack, the attacker uses one computer and one internet connection to flood the target server with traffic. This overloads the server's resources, making it slow, unresponsive, or even causing it to crash completely, preventing legitimate users from accessing the service.</p>
+    </section>
+
+    <section>
+        <h2>Types of DoS Attacks</h2>
+        <p>There are several types of DoS attacks, including:</p>
+        <ul>
+            <li><b>Flood Attacks:</b> These attacks flood the target with a large volume of traffic, such as <span class="highlight">UDP floods</span> or <span class="highlight">ICMP floods</span>.</li>
+            <li><b>Application Layer Attacks:</b> These attacks target the software and applications running on the server, exploiting vulnerabilities to crash the server or cause slowdowns.</li>
+            <li><b>Amplification Attacks:</b> These involve an attacker sending small requests to a server that then responds with much larger responses, amplifying the attack.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Impact of DoS Attacks</h2>
+        <p>DoS attacks can have severe consequences, including:</p>
+        <ul>
+            <li>Loss of service availability for legitimate users</li>
+            <li>Damage to the target's reputation and customer trust</li>
+            <li>Financial losses due to downtime and lost business opportunities</li>
+            <li>Increased costs for mitigation and recovery</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Defend Against DoS Attacks</h2>
+        <p>Protecting against DoS attacks involves a combination of preventive and reactive strategies, such as:</p>
+        <ul>
+            <li><b>Network Monitoring:</b> Regularly monitor network traffic to detect anomalies and potential attack vectors.</li>
+            <li><b>Rate Limiting:</b> Restricting the amount of traffic from a single source can help mitigate flooding attacks.</li>
+            <li><b>Firewalls and Intrusion Detection Systems (IDS):</b> Using firewalls and IDS tools to filter and block malicious traffic.</li>
+            <li><b>Cloud-Based Protection:</b> Many cloud providers offer DDoS protection services that can absorb large-scale attacks.</li>
+        </ul>
+    </section>
+
+    <section style="text-align: center;">
+        <button onclick="window.scrollTo(0, 0)">Back to Top</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025  By SAYED SAHIM Learn About Web Security. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
